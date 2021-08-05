@@ -5,6 +5,11 @@
 # Patient_status = " and is a new patient"
 # print(Patient_name + " is " + Patient_age + Patient_status)
 
+# name = input("Pleas, enter your name: ")
+# print("Howdy " + name)
+# color = input("What is your favorite color? ")
+# print(name + ' likes ' + color)
+
 #           Birth Year Example
 # Birth_year = input("Enter your birth year: ")
 # current_age = 2021 - int(Birth_year)
@@ -20,26 +25,68 @@
 # Patient_name = 'Anderson Annylusse Riche'
 # print(Patient_name.replace('Annylusse', 'Anilus'))
 
-#           Condition
+#           Conditions
+                #1
 # tempeture = int(input("Enter the tempeture: "))
 
-# if tempeture <= 20:
+# if tempeture < 17:
 #    print("It's cold.")
-# elif tempeture >= 20:
-#    print("It's hot")
+#  elif tempeture > 25:
+#      print("It's hot.")
 # else:
 #    print("It's cool.")
 
+#               #2
+# is_hot = False
+# is_cold = True
+
+# if is_hot:
+#    print("It's hot.")
+# elif is_cold:
+#    print("It's cold")
+# else:
+#    print("It's cool.")
+
+#               #3
 #           Weight
 # Weight = float(input("Enter you weight: "))
-# Weight_Type = (input("(K)g or (L)bs: ")) # asking the weight in kilogram or pound
+# Weight_Type = (input("(L)bs or (K)g: ")) # asking the weight in kilogram or pound
 
-# if Weight_Type.upper() == "K": # makes lower case to upper case
+# if Weight_Type.upper() == "L": # makes lower case to upper case
 #    converted = Weight / 0.45
-#    print("Weight in Pound is: ", converted)
+#    print(f"You are {converted} pounds.")
 # else:
 #    converted = Weight * 0.45
-#    print("Weight in Kgs is: ",  converted)
+#    print(f"You are {converted} kilos.")
+
+#               #4
+# print('the price of this house is', 1000000000)
+# client_credit = int(input("Enter your credit here: "))
+# Credit = 1000000000
+
+# if client_credit >= Credit:
+#    print("You will need to put down 10%.")
+#    down_payment = 0.1 * Credit
+#    print("Your down payment is: $", down_payment)
+# else:
+#    print("You will need to put down 20%.")
+#    down_payment = 0.2 * Credit
+#    print("Your down payment is: $", down_payment)
+
+#               #5
+# name = input("Enter your name here: ")
+
+# if len(name) < 3:
+#    print("Name must be at least 3 characters. Try it again.")
+# elif len(name) > 50:
+#    print("Name can be a maximum of 50 characters. Try it again.")
+# else:
+#    print("name looks good.")
+
+#           Convert weight
+# weight_lbs = input('Weight (lbs): ')
+# weight_kg = int(weight_lbs) * 0.45
+# print(weight_kg)
 
 #           While loops
 # a = 1
@@ -47,6 +94,22 @@
 # while a <= 10:
 #    print(a * '|')
 #    a += 1
+
+
+#                   #2 Guessing game
+# correct_number = 10
+# guessing_times = 3
+# guess_count = 0
+
+# while guess_count < guessing_times:
+#    player_input = int(input("Enter the guessing number: "))
+#    guess_count += 1
+
+#    if player_input == correct_number:    
+#        print("Yeah!!! You win!")
+#        break
+# else:
+#        print("Sorry. You enter the wrong numbers.")
 
 #           Lists
 # names = ['John', 'Sam', 'Mary', 'Peter', 'Jack', 'Sandra', 'Brown']
